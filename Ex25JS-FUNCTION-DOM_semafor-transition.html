@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .botons, .semafor {
+            height: 300px;
+        }
+        .botons {
+            width: 200px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        button {
+            background-color: dimgray;
+            border-radius: 12px;
+            padding: 10px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+
+            width: 120px;
+        }
+        .semafor {
+            width: 120px;
+            background-color: dimgray;
+            border-radius: 40px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .semafor div {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+
+            background-color: black;
+
+            transition: background 500ms;
+        }
+
+    </style>
+    <title>Ex25JS-FUNCTION-DOM_semafor-transition</title>
+</head>
+
+<body>
+    <div class="botons">
+        <button id="parar">STOP</button>
+        <button id="reduir">SLOW</button>
+        <button id="arrencar">GO</button>
+    </div>
+    <div class="semafor">
+        <div id="vermell"></div>
+        <div id="groc"></div>
+        <div id="verd"></div>
+    </div>
+
+    <script src="Ex25JS-FUNCTION-DOM_semafor-transition.js"></script>
+    
+</body>
+</html>
